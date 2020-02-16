@@ -7,15 +7,19 @@ import {NotificationService} from './services/notification/notification.service'
 import {TranslatePipe} from './pipes/translate/translate.pipe';
 import {TranslateService, TRANSLATION_PROVIDERS} from './services/translate';
 import {AuthService} from './services/auth/auth.service';
+import { LoginComponent } from './components/login/login.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
     AppComponent,
-    TranslatePipe
+    TranslatePipe,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [AuthService, NotificationService, TranslatePipe, TranslateService, TRANSLATION_PROVIDERS],
   bootstrap: [AppComponent]

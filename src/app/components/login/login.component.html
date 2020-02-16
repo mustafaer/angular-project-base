@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+  <title>{{'appTitle' | translate}}</title>
+</head>
+<body>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 full_width_panel">
+      <div class="panel_area">
+        <form autocomplete="off" class="form-horizontal form-signin">
+          <div class="form-group">
+            <h3>{{'appTitle' | translate}} </h3>
+          </div>
+          <div class="form-group">
+            <h6>{{'signInToSystem' | translate}}</h6>
+          </div>
+          <div class="input-group margin-bottom-sm">
+            <div class="input-group-prepend">
+                    <span class="input-group-text">
+                        <i class="fa fa-user"></i>
+                    </span>
+            </div>
+            <input [(ngModel)]="loginUser.username" autocomplete="off"
+                   class="form-control someinput" name="username"
+                   placeholder="{{'username' | translate}}" type="text">
+          </div>
+          <br>
+          <div class="input-group margin-bottom-sm">
+            <div class="input-group-prepend">
+                    <span class="input-group-text">
+                        <i class="fa fa-lock"></i>
+                    </span>
+            </div>
+            <input [(ngModel)]="loginUser.password" autocomplete="off"
+                   class="form-control someinput" name="password"
+                   placeholder="{{'password' | translate}}" type="password">
+          </div>
+          <br>
+          <div class="input-group margin-bottom-sm login-button-div">
+            <input (click)="login()"
+                   [disabled]="!isFilled"
+                   class="btn btn-default" type="submit" value="{{'login'| translate}}">
+          </div>
+          <div class="input-group mt-2">
+            <a [routerLink]="['password-request']" class="forgot-password">{{'forgotMyPassword' | translate}}</a>
+          </div>
+        </form>
+      </div>
+      <footer>{{'appTitle' | translate}} © <i aria-hidden="true" class="fa fa-angle-double-right"></i> Developed by <a
+        href="https://mustafaer.net" target="_blank">Mustafa ER</a>
+      </footer>
+    </div>
+  </div>
+</div>
+</body>
+</html>
