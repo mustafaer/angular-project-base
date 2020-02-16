@@ -6,6 +6,7 @@ import {AppComponent} from './app.component';
 import {NotificationService} from './services/notification/notification.service';
 import {TranslatePipe} from './pipes/translate/translate.pipe';
 import {TranslateService, TRANSLATION_PROVIDERS} from './services/translate';
+import {AuthService} from './services/auth/auth.service';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import {TranslateService, TRANSLATION_PROVIDERS} from './services/translate';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [NotificationService, TranslatePipe, TranslateService, TRANSLATION_PROVIDERS],
+  providers: [AuthService, NotificationService, TranslatePipe, TranslateService, TRANSLATION_PROVIDERS],
   bootstrap: [AppComponent]
 })
 export class AppModule {
