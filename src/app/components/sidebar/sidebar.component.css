@@ -1,0 +1,6 @@
+ul li{
+  border-radius: 0 !important;
+  background-color: cadetblue;
+  color: white;
+  cursor: pointer;
+}

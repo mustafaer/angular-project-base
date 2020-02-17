@@ -9,13 +9,14 @@ import {TranslatePipe} from "../../pipes/translate/translate.pipe";
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss']
+  styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
   loginUser: LoginModel;
   token: string;
   userType: number;
   loginError: string;
+  isFilled: boolean;
 
   constructor(private authService: AuthService,
               private router: Router,

@@ -1,0 +1,33 @@
+.main-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100000000;
+  padding: 5px 16px 5px 8px;
+  background-color: #2aabd2;
+  color: white;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.75);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.75);
+}
+
+.sidebar-toggle {
+  width: 30px;
+  height: 30px;
+  background-color: gray;
+  padding: 3px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.toggle-button {
+  color: whitesmoke;
+  margin: 3px;
+  border: 1px solid;
+}
+
+.navbar-link {
+  padding: 0;
+  float: left;
+  color: white !important;
+}

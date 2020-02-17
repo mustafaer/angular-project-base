@@ -1,7 +1,7 @@
 export const LANG_TR_NAME = 'tr';
 
 export const LANG_TR_TRANS = {
-  appTitle: 'TABİS',
+  appTitle: 'appTitle',
   // tslint:disable-next-line:max-line-length
   conErrorInfo: 'Problem sizde değil, bizde. Bir hata mesajı aldık. Ancak bu, kullanıcı hatasından kaynaklanmıyor. Lütfen biraz sonra tekrar deneyin. Sorun çözülmezse, sistem yöneticisiyle bağlantıya geçebilirsiniz.',
   conError: 'Bağlantı Hatası',

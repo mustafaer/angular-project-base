@@ -31,7 +31,7 @@
               "./node_modules/bootstrap/dist/css/bootstrap.min.css",
               "./node_modules/izitoast/dist/css/iziToast.min.css",
               "./node_modules/@fortawesome/fontawesome-free/css/all.min.css",
-              "src/styles.scss"
+              "src/styles.css"
             ],
             "scripts": [
               "./node_modules/jquery/dist/jquery.min.js",
@@ -132,6 +132,12 @@
           }
         }
       }
-    }},
-  "defaultProject": "client"
+    }
+  },
+  "defaultProject": "client",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "css"
+    }
+  }
 }
